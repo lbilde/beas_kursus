@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel = "stylesheet" 
+            type = "text/css" 
+            href = "./css/fontawesome-all.min.css">
+
+</head>
+<body>
+    <input type="button" value="Print" onclick="window.print()" />
+    <h1>Hej</h1>
+    <button onclick="clickedTheButton()">Klik mig!!</button>
+
+    <script language="javascript" type="text/javascript">
+      var numbers = [1,2,3,4,5,6,7];
+      var hej = 1;
+      var timeout = true;
+
+      function age(value){
+        this.age = value;
+      }
+
+      function Customer(firstname, lastname){
+        this.firstname = firstname; 
+        this.lastname  = lastname;
+        //Takes 1 param
+        this.setAge = age;
+      }
+
+      function hejTest(value){
+        value++;
+      }
+
+      function clickedTheButton() {
+        var cust1 = new Customer('Lars', "Bilde");
+        cust1.setAge(22);
+        var cust2 = new Customer("Lars11", "Bilde11");
+        console.log('cust1', cust1);
+        console.log('cust2', cust2);
+        throw('Bang!');
+        /*var response = confirm ("This is a warning message!");
+        for(var i = 0; i < numbers.length; i++){
+          console.log('by' + numbers[i]);
+        }
+
+        for(number in numbers){
+         console.log('hi ' + number);
+        }
+        
+        console.log('før: ' + hej);
+        hejTest(hej);
+        console.log('efter: ' + hej);
+        console.log('Alo');*/
+      }
+    </script>
+</body>
+</html>

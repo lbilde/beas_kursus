@@ -1,0 +1,20 @@
+.min-style{
+  color: aqua;
+  background-color: brown;
+  font-size: 100px;
+  font-family: 'Times New Roman', Times, serif
+}
+
+.com-style {
+  color: green;
+}
+
+h1{
+  color: aqua;
+  font-family: fantasy;
+}
+
+h1 span{
+  color: rebeccapurple;
+  font-family: 'Times New Roman', Times, serif
+}
